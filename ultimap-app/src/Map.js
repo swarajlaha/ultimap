@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
-//import mapboxgl from "mapbox-gl";
-import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions'
-import * as mapboxgl from 'mapbox-gl'; //'@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css'
+import * as mapboxgl from 'mapbox-gl';
+import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions';
+import '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css';
 import "./MapStyles.css";
-require('dotenv').config()
+require('dotenv').config();
 
 // Mapbox access token.
 mapboxgl.accessToken = process.env.REACT_APP_ACCESS_TOKEN;
